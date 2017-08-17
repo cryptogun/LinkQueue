@@ -1,0 +1,43 @@
+{
+  "search_string": {
+    "message": "hello%20world",
+    "description": "The string we search for. Put %20 between words that go together."
+  },
+
+  "fullName": {
+    "message": "稍候浏览"
+  },
+
+  "shortName": {
+    "message": "稍候浏览"
+  },
+
+  "description": {
+    "message": "待阅网址队列. 可通过谷歌帐号同步. 添加网址: 右键; 拖动链接 + <alt+z>; 选择文本 + 右键. 浏览网址: 点击图标; <alt+b>."
+  },
+  "option_title": {
+    "message": "LinkQueue 选项"
+  },
+  "open_in_text": {
+    "message": "在新窗口打开网址?"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "option_saved": {
+    "message": "已保存!"
+  },
+  "addLinkToQueue": {
+    "message": "添加链接到队列"
+  },
+  "popLinkFromQueue": {
+    "message": "队列弹出并访问"
+  },
+  "menu_add_url": {
+    "message": ">>>>>>>>>"
+  },
+  "menu_add_selection": {
+    "message": ">>>>>>>>> 高亮部分"
+  }
+
+}

@@ -1,0 +1,45 @@
+{
+  "search_string": {
+    "message": "hello%20world",
+    "description": "The string we search for. Put %20 between words that go together."
+  },
+
+  "fullName": {
+    "message": "Link Queue"
+  },
+
+  "shortName": {
+    "message": "LinkQueue"
+  },
+
+  "description": {
+    "message": "Save links to queue for later visiting. Syncd via chrome account. Add url: Right click; Drag + <alt+z>; Select + right click. Visit url: Click extension icon; <alt+b>."
+  },
+
+  "option_title": {
+    "message": "LinkQueue Options"
+  },
+  "open_in_text": {
+    "message": "open url in new tab?"
+  },
+  "save": {
+    "message": "Save"
+  },
+  "option_saved": {
+    "message": "Option saved!"
+  },
+
+  "addLinkToQueue": {
+    "message": "Add link to queue"
+  },
+  "popLinkFromQueue": {
+    "message": "Pop link from queue"
+  },
+  "menu_add_url": {
+    "message": ">>>>>>>>>"
+  },
+  "menu_add_selection": {
+    "message": ">>>>>>>>> selected only"
+  }
+
+}

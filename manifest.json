@@ -1,0 +1,63 @@
+{
+  "name": "__MSG_fullName__",
+  "version": "0.1.0",
+  "short_name": "__MSG_shortName__",
+  "description": "__MSG_description__",
+  "default_locale": "en",
+  "manifest_version": 2,
+
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "storage",
+    "http://*/",
+    "https://*/"
+  ],
+
+  "background": {
+    "page": "background.html"
+  },
+
+  "icons": {
+    "16": "images/queue_16.png",
+    "48":"images/queue_48.png", 
+    "128":"images/queue_128.png" 
+  },
+
+  "browser_action": {
+    "default_icon": "images/queue_16_gray.png"
+  },
+
+  "commands": {
+    "addurl": {
+      "suggested_key": {"default": "Alt+Q"},
+      "description": "__MSG_addLinkToQueue__"
+    },
+    "removeurl": {
+      "suggested_key": {"default": "Alt+B"},
+      "description": "__MSG_popLinkFromQueue__"
+    }
+  },
+
+  "content_scripts": [
+     // pros: Enable shortcut for appending urls.
+     // cons: 1. Need permission: "Read and change all your data on ..."
+     //       2. <all_urls> invokes "Allow access to file URLs" switch on chrome://extensions
+    {
+      // must use <all_urls> for shortcut.
+      "matches":["<all_urls>"], // ["http://*/", "https://*/"],
+      "js": ["content.js", "js-base64-2.1.9/base64.js"]
+    }
+  ],
+
+  "options_ui": {
+    // Required.
+    "page": "options.html",
+    // Recommended.
+    "chrome_style": true
+    // Not recommended; only provided for backwards compatibility,
+    // and will be unsupported in a future version of Chrome (TBD).
+    //"open_in_tab": true
+  }
+
+}
