@@ -5,7 +5,7 @@ Save links to queue for later visiting.
 ## Download
 Not in web store yet.   
 [https://github.com/cryptogun/LinkQueue/releases](https://github.com/cryptogun/LinkQueue/releases)   
-Drag into [chrome://extensions](chrome://extensions) to install.   
+Drag into `chrome://extensions` to install.   
 
 
 ## Usage
