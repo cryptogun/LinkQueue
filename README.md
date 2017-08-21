@@ -10,7 +10,7 @@ Drag into [chrome://extensions](chrome://extensions) to install.
 
 ## Usage
 Right click on link to add url.   
-Drag link then <kdb>alt</kdb>+<kbd>z</kbd> to add url.   
+Drag link then <kbd>alt</kbd>+<kbd>z</kbd> to add url.   
 Select text then right click to add url.   
 
 ---
