@@ -50,7 +50,6 @@ function popFromQueue()
     }
     // pop an url:
     url = queue.shift()
-    console.log(url)
     if (url)
     {
       url = Base64.decode(url)
