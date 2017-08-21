@@ -13,7 +13,7 @@
   },
 
   "description": {
-    "message": "Save links to queue for later visiting. Syncd via chrome account. Add url: Right click; Drag + <alt+z>; Select + right click. Visit url: Click extension icon; <alt+b>."
+    "message": "Save links to queue for later visiting. Add url: Right click on link; Drag link then <alt+z>; Select text then right click. Visit url: Click extension icon; <alt+b>."
   },
 
   "option_title": {

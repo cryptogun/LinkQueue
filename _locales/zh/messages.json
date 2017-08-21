@@ -13,7 +13,7 @@
   },
 
   "description": {
-    "message": "待阅网址队列. 可通过谷歌帐号同步. 添加网址: 右键; 拖动链接 + <alt+z>; 选择文本 + 右键. 浏览网址: 点击图标; <alt+b>."
+    "message": "待阅网址队列. 添加网址: 在链接上右键; 拖动链接然后<alt+z>; 选择文本然后右键. 浏览网址: 点击图标; <alt+b>."
   },
   "option_title": {
     "message": "LinkQueue 选项"

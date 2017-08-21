@@ -7,7 +7,8 @@
 
 function update_icon()
 {
-  chrome.storage.sync.get('urls', function(obj)
+  // chrome.storage.sync is buggy. not synced immediately on all browsers.
+  chrome.storage.local.get('urls', function(obj)
   {
     var queue = obj.urls
     // if saved queue is none:
@@ -38,7 +39,7 @@ function update_icon()
 function popFromQueue()
 {
   // get saved urls queue:
-  chrome.storage.sync.get('urls', function(obj)
+  chrome.storage.local.get('urls', function(obj)
   {
     var queue = obj.urls
 
@@ -49,7 +50,7 @@ function popFromQueue()
     }
     // pop an url:
     url = queue.shift()
-
+    console.log(url)
     if (url)
     {
       url = Base64.decode(url)
@@ -60,7 +61,7 @@ function popFromQueue()
       url = null
     }
 
-    chrome.storage.sync.get(
+    chrome.storage.local.get(
     {
       'new_tab': false
     },
@@ -79,7 +80,7 @@ function popFromQueue()
       url_func({'url': url}, function(tab)
       {
         // save new queue:
-        chrome.storage.sync.set({'urls': queue}, function()
+        chrome.storage.local.set({'urls': queue}, function()
         {
           update_icon()
           // console.log('pop queue saved.')
@@ -103,7 +104,7 @@ function saveUrl(url)
 
   var queue = []
   // get urls queue:
-  chrome.storage.sync.get('urls', function(obj)
+  chrome.storage.local.get('urls', function(obj)
   {
     queue = obj.urls
     // if saved queue is none:
@@ -117,7 +118,7 @@ function saveUrl(url)
     {
       queue.push(encoded_url)
       // save to storage.
-      chrome.storage.sync.set({'urls': queue}, function()
+      chrome.storage.local.set({'urls': queue}, function()
       {
         update_icon()
         // console.log('Url saved.')

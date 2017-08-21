@@ -11,10 +11,10 @@ function getMessage() {
 getMessage()
 
 
-// Saves options to chrome.storage.sync.
+// Saves options to chrome.storage.local.
 function save_options() {
   var new_tab = document.getElementById('open_in').checked;
-  chrome.storage.sync.set({
+  chrome.storage.local.set({
     'new_tab': new_tab
   }, function() {
     // Update status to let user know options were saved.
@@ -30,7 +30,7 @@ function save_options() {
 // stored in chrome.storage.
 function restore_options() {
   // Use default value new_tab = true.
-  chrome.storage.sync.get({
+  chrome.storage.local.get({
     'new_tab': false
   }, function(items) {
     document.getElementById('open_in').checked = items.new_tab;

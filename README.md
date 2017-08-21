@@ -1,12 +1,18 @@
 # LinkQueue
 Save links to queue for later visiting.    
-Syncd via chrome account.   
+
+
+## Download
+Not in web store yet.   
+[https://github.com/cryptogun/LinkQueue/releases](https://github.com/cryptogun/LinkQueue/releases)   
+Drag into [chrome://extensions](chrome://extensions) to install.   
+
 
 ## Usage
-Right click to add url.   
-Drag + <alt+z>to add url.   
-Select + right click to add url.   
+Right click on link to add url.   
+Drag link then <kdb>alt</kdb>+<kbd>z</kbd> to add url.   
+Select text then right click to add url.   
 
 ---
 Click extension icon to visit url.   
-<alt+b> to visit url.   
+<kbd>alt</kbd>+<kbd>b</kbd> to visit url.   
